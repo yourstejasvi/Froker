@@ -14,10 +14,10 @@ img {
 }
 
 .food-image-container {
-    position: absolute;
-    
-
-}
+    margin-top: 70px;
+    margin-left: -50px; 
+    position: relative;
+}   
   
 
 .banner1-container {
