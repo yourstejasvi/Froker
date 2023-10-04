@@ -1,4 +1,3 @@
-
 body {
     max-width: 100%;
     overflow: hidden;
@@ -6,8 +5,7 @@ body {
 
 .background-container{
     display: flex;
-
-    
+    margin-top: -250px;
 }
 
 img {
@@ -16,54 +14,53 @@ img {
 }
 
 .food-image-container {
-    margin-top: 70px;
-    margin-left: -50px; 
+    margin-top: 500px;
+    margin-left: -50px;
     position: relative;
-}   
-  
+    display: flex;
+    
+}
 
 .banner1-container {
     position: absolute;
     top: -85px;
     right: -150px;
     z-index: -2;
-    
-
 }
-
+    
 .header{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 9px;
     width: 50%;
-    margin-left: 720px; 
-    margin-top: 0px; 
-    
+    margin-left: 730px;
+    margin-top: 20px;
+        
 }
-
+    
 .text{
     color: rgb(255, 255, 255);
     font-size: 40px;
     font-weight: 700;
-
+    
 }
-
+    
 .underline{
     width: 61px;
     height: 6px;
     background: white;
     border-radius: 9px;
 }
-
+    
 .inputs{
     margin-left: 900px;
-    margin-top: 35px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-
+    
 .input{
     display: flex;
     align-items: center;
@@ -73,12 +70,12 @@ img {
     background: white;
     border-radius: 30px;
 }
-
+    
 .input img{
     margin: 0px 30px;
-
+    
 }
-
+    
 .input input{
     height: 50px;
     width: 400px;
@@ -88,32 +85,19 @@ img {
     color: black;
     font-size: 19px;
 }
+    
 
-.forgot-password{
-    padding-left: 62px;
-    margin-top: 17px;
-    margin-left: 820px;
-    color: black;
-    font-size: 18px;
-}
-
-.forgot-password span{
-    color: white;
-    cursor: pointer;
-}
-
+    
 .submit-container{
     display: flex;
-    gap: 40px;
-    margin-top: 10px;
-    margin-left: 840px;
-
+    margin-top: 40px;
+    margin-left: 860px;
+    
 }
-
+    
 .submit{
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 220px;
     height: 59px;
     color: white;
@@ -122,7 +106,6 @@ img {
     font-size: 19px;
     font-weight: 700;
     cursor: pointer;
-
+    
 }
-
-
+    

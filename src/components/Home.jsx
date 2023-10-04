@@ -1,8 +1,11 @@
 import React from 'react'
 import Navbar from "./Navbar";
+import Feedback from './Feedback';
+import Footer from './Footer';
 import BannerBackground from "../Assets/home-banner-background.png";
 import BannerImage from "../Assets/home-banner-image.png";
 import { FiArrowRight } from 'react-icons/fi'; 
+import { Route, Routes } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -28,6 +31,11 @@ const Home = () => {
           <img src={BannerImage} alt='' />
         </div>
       </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <Feedback/>
+      <Footer/>
     </div>
   )
 }

@@ -9,7 +9,7 @@ const Feedback = () => {
             <button className='secondary-button'>Submit</button>
         </div>
     </div>
-  );
+  );S
 };
 
 export default Feedback

@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { BsCart2 } from "react-icons/bs";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import Login from "../Pages/Login";
-
-// import Admin_Login from "./components/Registration-Login/Admin_Login.jsx";
-// import Partner_Login from "./components/Registration-Login/Partner_Login.jsx";
-// import Partnership from "./components/Registration-Login/Partnership.jsx";
+// import Admin_Login from '../Pages/Admin_Login';
+import Partner_Login from '../Pages/Partner_Login';
+import Partnership from '../Pages/Partnership';
+import { Link, Route, Routes } from "react-router-dom";
 import {
     Box,
     Button,
@@ -16,6 +16,7 @@ import {
     ListItemIcon,
     ListItemText,
 } from "@mui/material";
+
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
@@ -52,7 +53,6 @@ const Navbar = () => {
         
     ];
 
-    const [showLogin, setShowLogin] = useState(false);
 
     const logo_style ={
         height: 130,
@@ -64,11 +64,10 @@ const Navbar = () => {
             <img style={logo_style} src={Logo} alt="" />
         </div>
         <div className="navbar-links-container">
-            <a href='' onClick={() => setShowLogin(true)}>Login</a> 
-            {showLogin && <Login />}
-            <a href=''>Admin Login</a>
-            <a href=''>Partner Login</a>
-            <a href=''>Partnership</a>
+            <Link to="/Login">Login</Link>
+            {/* <Link to="/Admin_login">Admin Login</Link> */}
+            <Link to="/Partner_login">Partner Login</Link>
+            <Link to="/Partnership">Partnership</Link>
             {/* <a href=''>
                 <BsCart2 className='navbar-cart-icon' />
             </a>  */}
