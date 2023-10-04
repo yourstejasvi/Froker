@@ -14,9 +14,7 @@ img {
 }
 
 .food-image-container {
-    margin-top: 70px;
-    margin-left: -50px; 
-    position: relative;
+    position: absolute;
 }   
   
 
