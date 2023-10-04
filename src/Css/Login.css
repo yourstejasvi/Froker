@@ -5,9 +5,7 @@ body {
 }
 
 .background-container{
-    display: flex;
-
-    
+    display: flex;   
 }
 
 img {
@@ -16,10 +14,10 @@ img {
 }
 
 .food-image-container {
-    margin-top: 70px;
-    margin-left: -50px; 
-    position: relative;
-}   
+    position: absolute;
+    
+
+}
   
 
 .banner1-container {
@@ -38,7 +36,7 @@ img {
     gap: 9px;
     width: 50%;
     margin-left: 720px; 
-    margin-top: 0px; 
+    margin-top: 30px; 
     
 }
 

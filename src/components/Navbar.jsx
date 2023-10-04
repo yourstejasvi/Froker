@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BsCart2 } from "react-icons/bs";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import Login from "../Pages/Login";
-// import Admin_Login from '../Pages/Admin_Login';
+import Admin_Login from '../Pages/Admin_Login';
 import Partner_Login from '../Pages/Partner_Login';
 import Partnership from '../Pages/Partnership';
 import { Link, Route, Routes } from "react-router-dom";
@@ -65,7 +65,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-links-container">
             <Link to="/Login">Login</Link>
-            {/* <Link to="/Admin_login">Admin Login</Link> */}
+            <Link to="/Admin_login">Admin Login</Link>
             <Link to="/Partner_login">Partner Login</Link>
             <Link to="/Partnership">Partnership</Link>
             {/* <a href=''>
