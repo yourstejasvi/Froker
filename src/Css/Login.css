@@ -16,11 +16,12 @@ img {
 }
 
 .food-image-container {
-    margin-top: 70px;
-    margin-left: -50px; 
-    position: relative;
+    position: absolute;
 }   
-  
+
+.login-container{
+    margin-top: 30px;
+}
 
 .banner1-container {
     position: absolute;
