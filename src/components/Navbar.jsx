@@ -65,7 +65,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-links-container">
             <Link to="/Login">Login</Link>
-            {/* <Link to="/Admin_login">Admin Login</Link> */}
+            <Link to="/Admin_login">Admin Login</Link>
             <Link to="/Partner_login">Partner Login</Link>
             <Link to="/Partnership">Partnership</Link>
             {/* <a href=''>

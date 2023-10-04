@@ -1,3 +1,4 @@
+
 body {
     max-width: 100%;
     overflow: hidden;
@@ -5,7 +6,8 @@ body {
 
 .background-container{
     display: flex;
-    margin-top: -250px;
+
+    
 }
 
 img {
@@ -14,11 +16,11 @@ img {
 }
 
 .food-image-container {
-    margin-top: 500px;
-    margin-left: -50px;
-    position: relative;
-    display: flex;
-    
+    position: absolute;
+}   
+
+.admin-login-container{
+    margin-top: 30px;
 }
 
 .banner1-container {
@@ -26,41 +28,43 @@ img {
     top: -85px;
     right: -150px;
     z-index: -2;
-}
     
+
+}
+
 .header{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 9px;
     width: 50%;
-    margin-left: 730px;
-    margin-top: 20px;
-        
-}
+    margin-left: 720px; 
+    margin-top: 0px; 
     
+}
+
 .text{
     color: rgb(255, 255, 255);
     font-size: 40px;
     font-weight: 700;
-    
+
 }
-    
+
 .underline{
     width: 61px;
     height: 6px;
     background: white;
     border-radius: 9px;
 }
-    
+
 .inputs{
     margin-left: 900px;
-    margin-top: 40px;
+    margin-top: 35px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-    
+
 .input{
     display: flex;
     align-items: center;
@@ -70,12 +74,12 @@ img {
     background: white;
     border-radius: 30px;
 }
-    
+
 .input img{
     margin: 0px 30px;
-    
+
 }
-    
+
 .input input{
     height: 50px;
     width: 400px;
@@ -85,20 +89,20 @@ img {
     color: black;
     font-size: 19px;
 }
-    
 
-    
 .submit-container{
     display: flex;
-    margin-top: 40px;
-    margin-left: 860px;
-    
+    gap: 40px;
+    margin-top: 10px;
+    margin-left: 840px;
+
 }
-    
+
 .submit{
     display: flex;
     justify-content: center;
-    width: 220px;
+    align-items: center;
+    width: 400px;
     height: 59px;
     color: white;
     background-color: #a49e9e;
@@ -106,6 +110,9 @@ img {
     font-size: 19px;
     font-weight: 700;
     cursor: pointer;
-    
+    margin-left: 35px;
+    margin-top: 10px;
+
 }
-    
+
+
