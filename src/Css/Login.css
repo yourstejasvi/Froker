@@ -24,7 +24,16 @@ img {
     right: -150px;
     z-index: -2;
     
+}
 
+.login-white-box{
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 500px;
+    width: 600px;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-left: 740px;
+    padding: 40px 80px;
 }
 
 .header{
@@ -33,13 +42,12 @@ img {
     align-items: center;
     gap: 9px;
     width: 50%;
-    margin-left: 720px; 
-    margin-top: 30px; 
+    margin-left: 100px; 
     
 }
 
 .text{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 40px;
     font-weight: 700;
 
@@ -48,12 +56,12 @@ img {
 .underline{
     width: 61px;
     height: 6px;
-    background: white;
+    background: rgb(0, 0, 0);
     border-radius: 9px;
 }
 
 .inputs{
-    margin-left: 900px;
+    margin-left: 45px;
     margin-top: 35px;
     display: flex;
     flex-direction: column;
@@ -85,40 +93,18 @@ img {
     font-size: 19px;
 }
 
-.forgot-password{
-    padding-left: 62px;
-    margin-top: 17px;
-    margin-left: 820px;
-    color: black;
+.reset-password{
+    text-decoration: none;
     font-size: 18px;
+    color: rgb(80, 175, 175);
 }
 
-.forgot-password span{
-    color: white;
-    cursor: pointer;
+.reset-password:hover{
+    color: rgb(52, 109, 109);
 }
 
-.submit-container{
-    display: flex;
-    gap: 40px;
-    margin-top: 10px;
-    margin-left: 840px;
 
-}
 
-.submit{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 220px;
-    height: 59px;
-    color: white;
-    background-color: #a49e9e;
-    border-radius: 50px;
-    font-size: 19px;
-    font-weight: 700;
-    cursor: pointer;
 
-}
 
 

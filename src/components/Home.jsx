@@ -6,8 +6,12 @@ import BannerBackground from "../Assets/home-banner-background.png";
 import BannerImage from "../Assets/home-banner-image.png";
 import { FiArrowRight } from 'react-icons/fi'; 
 import { Route, Routes } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div className='home-container'>
       <Navbar />
@@ -23,7 +27,7 @@ const Home = () => {
             Healthy and tasty food prepared with hygiene, at affordable prices, delivered at your doorstep
 
           </p>
-          <button className='secondary-button'>
+          <button className='secondary-button' onClick={()=>navigate("/Order_now")}>
             Order Now <FiArrowRight />
           </button>
         </div>

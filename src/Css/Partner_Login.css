@@ -1,10 +1,9 @@
-
 body {
     max-width: 100%;
     overflow: hidden;
 }
 
-.admin-login-background-container{
+.partner-login-background-container{
     display: flex;   
 }
 
@@ -13,22 +12,20 @@ img {
     height: auto;
 }
 
-.admin-login-food-image-container {
+.partner-login-food-image-container {
     position: absolute;
-
-}
+}   
   
 
-.admin-login-banner1-container {
+.partner-login-banner1-container {
     position: absolute;
     top: -85px;
     right: -150px;
-    z-index: -2;
-    
+    z-index: -2; 
 
 }
 
-.admin-login-whitebox{
+.partner-login-white-box{
     background-color: rgba(255, 255, 255, 0.8);
     height: 500px;
     width: 600px;
@@ -38,40 +35,40 @@ img {
     padding: 40px 80px;
 }
 
-.admin-login-header{
+.partner-login-header{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 9px;
     width: 70%;
-    margin-left: 60px; 
-    
+    margin-left: 55px; 
     
 }
 
-.admin-login-text{
+.text{
     color: rgb(0, 0, 0);
     font-size: 40px;
     font-weight: 700;
 
 }
 
-.admin-login-underline{
+.underline{
     width: 61px;
     height: 6px;
     background: rgb(0, 0, 0);
     border-radius: 9px;
 }
 
-.admin-login-inputs{
-    margin-left: 45px;
+
+.partner-login-inputs{
+    margin-left: 30px;
     margin-top: 35px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.admin-login-input{
+.input{
     display: flex;
     align-items: center;
     margin-left: -30px;
@@ -81,12 +78,21 @@ img {
     border-radius: 30px;
 }
 
-.admin-login-input img{
+.input img{
     margin: 0px 30px;
 
 }
 
-.admin-login-input input{
+.react-icons{
+    color: grey;
+    height: 30px;
+    width: 40px;
+    margin-left: 18px;
+
+
+}
+
+.input input{
     height: 50px;
     width: 400px;
     background: transparent;
@@ -96,10 +102,8 @@ img {
     font-size: 19px;
 }
 
-
-.admin-login-submit-container{
+.partner-login-submit-container{
     display: flex;
-    gap: 40px;
     margin-top: 70px;
     margin-left: 160px;
 

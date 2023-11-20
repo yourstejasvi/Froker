@@ -1,0 +1,32 @@
+.registration--background-container{
+    display: flex;  
+}
+.registration--Banner1{
+    position: absolute;
+    top: -85px;
+    right: -150px;
+    z-index: -2;
+    
+}
+.registration--diet{
+    height: 200px;
+    margin-left: 160px;
+    margin-top: 280px;
+}
+.registration--pizza{
+    height: 200px;
+    margin-left: 460px;
+    margin-bottom: 280px;
+}
+
+.registration-form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -500px;
+    margin-left: 287px;
+    background-color:rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    padding: 28px;
+}
