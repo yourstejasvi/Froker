@@ -21,7 +21,10 @@ const postData = async (url, body) => {
     try {
       var response = await axios.post(`${ServerURL}/${url}`, body, {
         headers: {
-          "Content-Type": "multipart/form-data", 
+          'Content-Type':'application/json',
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Credentials': 'true',
+          'Access-Control-Allow-Methods':' POST'
         },
       });
   
@@ -32,23 +35,5 @@ const postData = async (url, body) => {
     }
   };
   
-// const postData= async(url,body) => {
-
-     
-//     try{     
-//     var response = await axios.post(`${ServerURL}/${url}`,body);
-
-//     headers: {
-//         "Content-Type": "multipart/form-data", 
-//       },
-
-    
-//     var result = await response.data;
-//     return result;
-//     }
-//     catch(e){
-//         return null;
-//     }
-//     }
 
 export {ServerURL,getData,postData};

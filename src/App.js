@@ -9,13 +9,13 @@ import Partnership from "./Views/Partnership";
 import Registration from './Views/Registration';
 import Order_now  from './Views/Order_now';
 import Partner_Registration from './Views/Partner_Registration';
+import ResetPassword from './Views/ResetPassword';
+import Customer_dashboard from './Views/Customer_dashboard';
 
 import {Route, Routes} from "react-router-dom";
 
 function App() {
   return <div className="App">
-
-  
 
       <Routes>
           
@@ -27,7 +27,9 @@ function App() {
           <Route path='/Registration' element={<Registration />} />
           <Route path='/Order_Now' element={<Order_now />} />
           <Route path='/Partner_Registration' element={<Partner_Registration />} />
-      
+          <Route path='/resetPassword' element={<ResetPassword />} />
+          <Route path='/customer_dashboard' element={<Customer_dashboard />} />
+
       </Routes>
        
   </div>

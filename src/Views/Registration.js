@@ -3,7 +3,7 @@ import Banner1 from "../Assets/home-banner-background.png";
 import Logo from "../Assets/Forker.png";
 import Diet from "../Assets/diet.png";
 import Pizza from "../Assets/Pizza.png";
-
+import { useNavigate } from "react-router-dom";
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
@@ -22,6 +22,8 @@ import "../Css/Registration.css";
 import { postData } from "../services/ServerServices";
 
 function Registration() {
+
+    var navigate = useNavigate();
 
 
     const [fname, setFname] = useState("");
@@ -56,17 +58,19 @@ function Registration() {
         formData.append("password", password);
        
 
-        for (var pair of formData.entries()) {
-            console.log(pair[0] + ', ' + pair[1]);
-          }
-          
-        var result = await postData("customer/register_customer", formData);
-        console.log(result);
-        if (result && result.status) {
+        var flag = false;
+        var result = await postData("customer/register_customer", {"fname":fname,"lname":lname,"mail":mail,"mob":mob,"city":city,"password":password});
+        if (result) {
+            flag = true;
+            
           Swal.fire({
             icon: "success",
             title: "Registered successfully",
           });
+          if(flag) {
+            navigate('/Login');
+
+        }          
         } else {
           Swal.fire({
             icon: "error",
@@ -74,7 +78,9 @@ function Registration() {
           });
         }
 
+        
         clearData();
+
     
       };
 
@@ -196,6 +202,8 @@ function Registration() {
                 <InputLabel required htmlFor="passsword">Password</InputLabel>
                 <FilledInput
                     id="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                     type={showPassword ? 'text' : 'password'}
                     endAdornment={
                     <InputAdornment position="end">

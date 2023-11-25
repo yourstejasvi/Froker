@@ -8,11 +8,38 @@ import Box from '@mui/material/Box';
 import "../Css/Login.css";
 import email_icon from "../Assets/email.png";
 import password_icon from "../Assets/password.png";
+import { postData } from '../services/ServerServices';
+import Swal from "sweetalert2";
 
 
 const Login = () => {
 
+    const [mail, setMail] = useState("");
+    const [password, setPassword] = useState("");
+
+    const clearData = () => {
+        setMail("");
+        setPassword("");
+      };
+
     var navigate = useNavigate();
+
+    const handleLogin = async() => {
+         var formData = new FormData();
+         formData.append("mail", mail);
+         formData.append("password", password);
+
+         var result = await postData("/customer/login_customer",{"mail":mail,"password":password});
+         if(result){
+            navigate("/customer_dashboard");
+         }else{
+            Swal.fire({
+                icon: "error",
+                title: "Incorrect/Missing Credentials",
+            });
+            clearData();
+         }
+    }
 
 
   return (
@@ -41,22 +68,22 @@ const Login = () => {
                     <div className='inputs'>
                         <div className='input'>
                             <img src={email_icon} alt="" />
-                            <input type='email' placeholder="Email" />
+                            <input type='email' placeholder="Email" value={mail} onChange={(e) => setMail(e.target.value)}/>
                         </div>
                         <div className='input'>
                             <img src={password_icon} alt="" />
-                            <input type='password' placeholder="Password" />
+                            <input type='password' placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}/>
                         </div>
                     </div>
                     
-                    <Button variant='text' size='string' color='primary' className='reset-password'>{'Reset password'}</Button>
+                    <Button variant='text' size='string' color='primary' className='reset-password' onClick={() => {navigate("/resetPassword");}}>{'Reset password'}</Button>
                     <div className="submit-container">
 
                         <Box display="flex" justifyContent="space-between" maxWidth="75%" marginLeft="48px" marginTop="20px">
 
                             <Button variant='contained' size='large' color='warning' className='register' onClick={() => {navigate("/Registration");}}>{'REGISTER'}</Button>
                             
-                            <Button variant='contained' size='large' color='warning' className='login' onClick={{}}>{'LOGIN'}</Button>
+                            <Button variant='contained' size='large' color='warning' className='login' onClick={handleLogin}>{'LOGIN'}</Button>
 
 
                         </Box>   
